@@ -158,6 +158,9 @@ class MyGame(arcade.Window):
 
                 self.board_sprite_list.append(sprite)
 
+        self.background_music = arcade.Sound("background_music.ogg")
+        self.background_music.play(loop=True)
+
         self.new_stone()
         self.update_board()
 
